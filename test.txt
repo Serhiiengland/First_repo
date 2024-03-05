@@ -1,0 +1,5 @@
+name = input ("Serhii:")
+
+say_hi = f"Hello, {name}
+
+ptint (say_hi)
