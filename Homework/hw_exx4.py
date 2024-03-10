@@ -4,7 +4,7 @@ users = [                   # List with users with they birthdays
     {"name": "John Doe", "birthday": "1985.01.23"},
     {"name": "Jane Smith", "birthday": "1990.01.27"},
     {"name": "Rob Post", "birthday": "1990.03.05"},
-    {"name": "Simon Teylor", "birthday": "1990.03.07"},
+    {"name": "Simon Teylor", "birthday": "1990.03.12"},
     {"name": "Mark Berett", "birthday": "1974.03.10"},
 ]
 
