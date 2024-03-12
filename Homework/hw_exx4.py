@@ -4,8 +4,8 @@ users = [                   # List with users with they birthdays
     {"name": "John Doe", "birthday": "1985.01.23"},
     {"name": "Jane Smith", "birthday": "1990.01.27"},
     {"name": "Rob Post", "birthday": "1990.03.05"},
-    {"name": "Simon Teylor", "birthday": "1990.03.12"},
-    {"name": "Mark Berett", "birthday": "1974.03.10"},
+    {"name": "Simon Teylor", "birthday": "1990.03.17"},
+    {"name": "Mark Berett", "birthday": "1974.03.14"},
 ]
 
 def find_next_weekday(d, weekday: int):    # Функція для знаходження наступного заданого дня тижня після заданої дати
@@ -26,7 +26,9 @@ def birthdays_ready_users(users):
     return prepared_users
 
 # TODO: Оформити в функцію
-def get_upcoming_birthdays(prepared_users, days = 7):
+def get_upcoming_birthdays(users):
+    days = 7    
+    prepared_users = birthdays_ready_users(users)
     today = datetime.today().date()  # Поточна дата
     upcoming_birthdays = []          # Список майбутніх днів народження
 
@@ -47,7 +49,6 @@ def get_upcoming_birthdays(prepared_users, days = 7):
             })
     return upcoming_birthdays
 
-prepared_users = birthdays_ready_users(users)
-upcoming_birthdays = get_upcoming_birthdays(prepared_users)
+upcoming_birthdays = get_upcoming_birthdays(users)
 
 print(upcoming_birthdays)  # Виводимо список майбутніх днів народження

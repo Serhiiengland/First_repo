@@ -11,10 +11,11 @@ def get_days_from_today(date): #створюємо ф-цію
         print("Please input in format: yyyy-mm-dd") #просимо користувача ввести дату у форматі р/м/д
         return
     
-    result = given_date - current_date #від поточної дати віднімаємо задану дату
+    result = given_date - current_date  #від поточної дати віднімаємо задану дату
+    
    
 
-    print(result.days) #виводимо результат
+    return result.days #виводимо результат
    
     
-get_days_from_today('2024-03-15') #викликаємо ф-цію, "з.і: можемо змінювати дату"
+get_days_from_today('2024-03-20') #викликаємо ф-цію, "з.і: можемо змінювати дату"
